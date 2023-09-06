@@ -1,0 +1,102 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@700&display=swap');
+
+
+
+main{
+    display: flex;
+    align-items: center;
+}
+
+main .img-student{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main .img-student h1{
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-align: start;
+}
+main .img-student img{
+    width: 100%;
+}
+.form-redacao{
+    width: 50%;
+
+}
+.form-redacao form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.form-redacao form .tema{
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    transition: 0.3s;
+    margin-bottom: 15px;
+    
+}
+
+.form-redacao form .tema:focus{
+    border-top: none!important;
+    border-left: none!important;
+    border-right: none!important;
+    outline: none;
+    border-color: #00e88f;
+}
+
+.form-redacao form .redacao{
+    resize: none;
+    padding: 10px;
+    
+}
+.form-redacao form .btn-colar{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.form-redacao form .btn-colar:hover{
+    transform: translateY(-7px);
+}
+
+form button{
+    margin-top: 15px;
+    width: 100%;
+    background-color: #00e88f!important;
+    border: none!important;
+    font-weight: 800!important;
+    color: #000!important;
+    font-size: 18px!important;
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+form button:hover{
+    background-color: #0bc27c!important;
+}
+
+@media screen and (max-width: 768px) {
+    .img-student img{
+        display: none;
+    }
+    .img-student{
+        width: 100%!important;
+    }
+    main{
+        flex-direction: column;
+    }
+    .form-redacao{
+        width: 100%;
+    }
+  }

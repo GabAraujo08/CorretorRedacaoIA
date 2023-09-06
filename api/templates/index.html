@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrija sua redação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+
+<body>
+    <main class="container-fluid">
+        <div class="img-student">
+            <h1>CORRIJA SUA REDAÇÃO USANDO INTELIGÊNCIA ARTIFICIAL!</h1>
+            <img src="{{ url_for('static', filename='img/img-student.svg') }}" alt="">
+        </div>
+        <div class="form-redacao">
+            <form method="POST">
+                <label for="temaRedacao">Digite o tema da sua redação</label>
+                <input class="tema" id="temaRedacao" type="text" name="temaRedacao">
+
+                <label style="margin-bottom: 3px;" for="redacao">Cole sua redação</label>
+                <p id="btnColar" class="btn-colar">📑</p>
+                <textarea class="redacao" id="redacao" cols="30" rows="10" name="redacao"></textarea>
+
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </form>
+        </div>
+    </main>
+
+
+
+
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+    
+</body>
+
+</html>

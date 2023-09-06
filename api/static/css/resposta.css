@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@700&display=swap');
+
+
+
+main{
+    font-family: 'Inter', sans-serif;
+    padding: 50px!important;
+}
+
+h1{
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+p{
+    font-size: 18px;
+}

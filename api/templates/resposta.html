@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado da Redação</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/resposta.css') }}">
+</head>
+<body>
+    <main class="container-fluid">
+        <h1>Sua correção</h1>
+        <p>{{ correcao | safe }}</p>
+        <!-- <p>{{ redacaoChat | safe }}</p> -->
+    </main>
+    
+    
+</body>
+</html>
